@@ -28,7 +28,7 @@ import static com.java360.pmanager.infrastructure.controller.RestConstants.*;
 @RequiredArgsConstructor
 public class ApiKeyRestResource {
 
-	// O @RequiredArgsConstructor cria o construtor para o private abaixo
+	//O @RequiredArgsConstructor cria o construtor para o private abaixo
 	private final ApiKeyService apiKeyService;
 
 	//Requisição de create
