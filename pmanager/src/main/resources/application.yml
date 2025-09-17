@@ -1,0 +1,33 @@
+server:
+  servlet:
+    context-path: /
+  port: 8080
+spring:
+  jackson: #Significa que o que for nulo não será retornado para o cliente
+    default-property-inclusion: non_null
+  application:
+    name: Pmanager
+  datasource:
+    url: jdbc:h2:mem:test
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enable: true
+  jpa:
+    show-sql: true
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: pmanagerdb
+
+app:
+    general:
+      pageSize: 3
+    security:
+      apiKey: theKey
+      expirationDays: 2
+
